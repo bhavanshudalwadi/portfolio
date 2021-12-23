@@ -21,7 +21,7 @@ $(document).ready(function() {
                 success: function(response) {
                     if(response == "Success") {
                         $('#replayModel').modal('show');
-                        setTimeout(function() { window.location = "./"; }, 1500);
+                        setTimeout(function() { window.location = "/"; }, 1500);
                     }else {
                         alert('Soory!, Something wants wrong...');
                         console.log(response);
@@ -50,7 +50,7 @@ $(document).ready(function() {
                 success: function(response) {
                     if(response == "Success") {
                         $('#replayModel').modal('show');
-                        setTimeout(function() { window.location = "./"; }, 1500);
+                        setTimeout(function() { window.location = "/"; }, 1500);
                     }else {
                         alert('Soory!, Something wants wrong...');
                         console.log(response);
@@ -79,7 +79,7 @@ $(document).ready(function() {
                 success: function(response) {
                     if(response == "Success") {
                         $('#replayModel').modal('show');
-                        setTimeout(function() { window.location = "./"; }, 1500);
+                        setTimeout(function() { window.location = "/"; }, 1500);
                     }else {
                         alert('Soory!, Something wants wrong...');
                         console.log(response);
@@ -110,7 +110,7 @@ $(document).ready(function() {
                 success: function(response) {
                     if(response == "Success") {
                         $('#contectModel').modal('show');
-                        setTimeout(function() { window.location = "./"; }, 1500);
+                        setTimeout(function() { window.location = "/"; }, 1500);
                     }else {
                         alert('Soory!, Something wants wrong...');
                         console.log(response);
