@@ -8,6 +8,8 @@ $(document).ready(function() {
         $web_shop = $('#web_shop').val();
         $comment_shop = $('#comment_shop').val();
 
+        $('#loader').modal('show');
+        
         $.ajax({
             type: 'POST',
             url: 'https://bhavanshuprogrammer.000webhostapp.com/actions/save_reply.php',
@@ -20,9 +22,11 @@ $(document).ready(function() {
                 },
                 success: function(response) {
                     if(response == "Success") {
+                        $('#loader').modal('hide');
                         $('#replayModel').modal('show');
-                        setTimeout(function() { window.location = "/"; }, 1500);
+                        setTimeout(function() { window.location = "/"; }, 2000);
                     }else {
+                        $('#loader').modal('hide');
                         alert('Soory!, Something wants wrong...');
                         console.log(response);
                     }
@@ -35,8 +39,9 @@ $(document).ready(function() {
         $email_portfolio = $('#email_portfolio').val();
         $web_portfolio = $('#web_portfolio').val();
         $comment_portfolio = $('#comment_portfolio').val();
-        // alert($radval);
-
+        
+        $('#loader').modal('show');
+        
         $.ajax({
             type: 'POST',
             url: 'https://bhavanshuprogrammer.000webhostapp.com/actions/save_reply.php',
@@ -49,9 +54,11 @@ $(document).ready(function() {
                 },
                 success: function(response) {
                     if(response == "Success") {
+                        $('#loader').modal('hide');
                         $('#replayModel').modal('show');
-                        setTimeout(function() { window.location = "/"; }, 1500);
+                        setTimeout(function() { window.location = "/"; }, 2000);
                     }else {
+                        $('#loader').modal('hide');
                         alert('Soory!, Something wants wrong...');
                         console.log(response);
                     }
@@ -64,7 +71,8 @@ $(document).ready(function() {
         $email_billbook = $('#email_billbook').val();
         $web_billbook = $('#web_billbook').val();
         $comment_billbook = $('#comment_billbook').val();
-        // alert($radval);
+
+        $('#loader').modal('show');
 
         $.ajax({
             type: 'POST',
@@ -78,9 +86,11 @@ $(document).ready(function() {
                 },
                 success: function(response) {
                     if(response == "Success") {
+                        $('#loader').modal('hide');
                         $('#replayModel').modal('show');
-                        setTimeout(function() { window.location = "/"; }, 1500);
+                        setTimeout(function() { window.location = "/"; }, 2000);
                     }else {
+                        $('#loader').modal('hide');
                         alert('Soory!, Something wants wrong...');
                         console.log(response);
                     }
@@ -90,12 +100,13 @@ $(document).ready(function() {
 
     // Save Contect 
     $('#btnsendmsg').on('click', function() {
+        $('#loader').modal('show');
+        
         $con_name = $('#con_name').val();
         $con_phone = $('#con_phone').val();
         $con_email = $('#con_email').val();
         $con_subject = $('#con_subject').val();
         $con_msg = $('#con_msg').val();
-        // alert($radval);
 
         $.ajax({
             type: 'POST',
@@ -109,9 +120,11 @@ $(document).ready(function() {
                 },
                 success: function(response) {
                     if(response == "Success") {
+                        $('#loader').modal('hide');
                         $('#contectModel').modal('show');
-                        setTimeout(function() { window.location = "/"; }, 1500);
+                        setTimeout(function() { window.location = "/"; }, 2000);
                     }else {
+                        $('#loader').modal('hide');
                         alert('Soory!, Something wants wrong...');
                         console.log(response);
                     }
