@@ -10,7 +10,7 @@ $(document).ready(function() {
 
         $.ajax({
             type: 'POST',
-            url: 'https://www.bhavanshuddalwadi.ml/actions/save_reply.php',
+            url: 'https://bhavanshuprogrammer.000webhostapp.com/actions/save_reply.php',
             data: {
                     blog_blogname: $blogname,
                     blog_name: $name_shop,
@@ -21,8 +21,10 @@ $(document).ready(function() {
                 success: function(response) {
                     if(response == "Success") {
                         $('#replayModel').modal('show');
+                        setTimeout(function() { window.location = "./"; }, 1500);
                     }else {
                         alert('Soory!, Something wants wrong...');
+                        console.log(response);
                     }
                 }
         });
@@ -37,7 +39,7 @@ $(document).ready(function() {
 
         $.ajax({
             type: 'POST',
-            url: 'https://www.bhavanshuddalwadi.ml/actions/save_reply.php',
+            url: 'https://bhavanshuprogrammer.000webhostapp.com/actions/save_reply.php',
             data: {
                     blog_blogname: $blogname,
                     blog_name: $name_portfolio,
@@ -48,8 +50,10 @@ $(document).ready(function() {
                 success: function(response) {
                     if(response == "Success") {
                         $('#replayModel').modal('show');
+                        setTimeout(function() { window.location = "./"; }, 1500);
                     }else {
                         alert('Soory!, Something wants wrong...');
+                        console.log(response);
                     }
                 }
         });
@@ -64,7 +68,7 @@ $(document).ready(function() {
 
         $.ajax({
             type: 'POST',
-            url: 'https://www.bhavanshuddalwadi.ml/actions/save_reply.php',
+            url: 'https://bhavanshuprogrammer.000webhostapp.com/actions/save_reply.php',
             data: {
                     blog_blogname: $blogname,
                     blog_name: $name_billbook,
@@ -75,8 +79,10 @@ $(document).ready(function() {
                 success: function(response) {
                     if(response == "Success") {
                         $('#replayModel').modal('show');
+                        setTimeout(function() { window.location = "./"; }, 1500);
                     }else {
                         alert('Soory!, Something wants wrong...');
+                        console.log(response);
                     }
                 }
         });
@@ -93,7 +99,7 @@ $(document).ready(function() {
 
         $.ajax({
             type: 'POST',
-            url: 'https://www.bhavanshuddalwadi.ml/actions/save_contects.php',
+            url: 'https://bhavanshuprogrammer.000webhostapp.com/actions/save_contects.php',
             data: {
                     con_name: $con_name,
                     con_phone: $con_phone,
@@ -104,8 +110,10 @@ $(document).ready(function() {
                 success: function(response) {
                     if(response == "Success") {
                         $('#contectModel').modal('show');
+                        setTimeout(function() { window.location = "./"; }, 1500);
                     }else {
                         alert('Soory!, Something wants wrong...');
+                        console.log(response);
                     }
                 }
         });
